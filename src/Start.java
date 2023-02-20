@@ -11,12 +11,12 @@ public class Start {
             int divisor = input.nextInt();
             try {
                 if (divisor == 0) {
-                    throw new ArithmeticException("The Divisor can't be 0");
+                    throw new ArithmeticException();
                 } else {
                     System.out.println("The result is:  " + dividend / divisor);
                 }
             }catch (ArithmeticException e){
-                System.out.println("Try Again");
+                System.out.println("Divisor can't be 0!");
             }
         }
     }
